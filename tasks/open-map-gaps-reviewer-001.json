@@ -1,0 +1,35 @@
+{
+  "id": "open-map-gaps-reviewer-001",
+  "title": "Name/secure the blocking reviewer roles (licensing/imagery + do-no-harm + experienced validator)",
+  "project": "open-map-gaps",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-map-gaps contributes humanitarian map data upstream into OpenStreetMap (ODbL share-alike) only via OSM-authorized, human-in-the-loop processes. Three reviews are hard, non-skippable gates before any pack can be mapped: (1) a licensing/imagery reviewer who verifies imagery is OSM-authorized and every conflated/import-candidate source is ODbL-compatible; (2) a do-no-harm reviewer who screens for harm to vulnerable people and can restrict or exclude an area; (3) an experienced OSM validator who confirms edits are correct and merged (not reverted) before a deed counts as delivered. Until these roles are filled, no pack can pass the gates and all packs remain verifiedNeed:false.",
+  "objective": "Identify and record named, qualified reviewers for the licensing/imagery, do-no-harm, and experienced-validator roles, so the M0 pilot pack can be reviewed and merged.",
+  "acceptanceCriteria": [
+    "A named, qualified licensing/imagery reviewer is recorded (can assess OSM imagery permissions, ODbL compatibility, and SPDX/CC/ODbL terms); at least two are named to avoid a single-person bottleneck.",
+    "A named do-no-harm reviewer is recorded with humanitarian-protection or HOT-data-ethics background.",
+    "A named experienced OSM validator is recorded with real validation experience (e.g. Tasking Manager validator role).",
+    "Roles, names, and qualifications are documented in PLAN.md Governance; the licensing/imagery and do-no-harm roles are confirmed filled BEFORE pilot-007 is mapped.",
+    "Until all roles are filled, the backlog stays verifiedNeed:false and no pack may be mapped; this constraint is recorded.",
+    "No OSM write credentials are requested or stored; this task produces documentation only."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-map-gaps\\PLAN.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "Humanitarian OpenStreetMap Team (HOT) data-ethics / do-no-harm guidance",
+    "OSM Automated Edits code of conduct; OSMF Organised Editing Guidelines",
+    "OSM imagery permissions (Bing, Esri, Maxar via OSM agreement, Mapbox)"
+  ],
+  "output": "A governance document naming the licensing/imagery, do-no-harm, and experienced-validator reviewers (with qualifications and the ≥2-reviewer anti-bottleneck note), recorded in PLAN.md Governance and ready to gate the M0 pilot.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
