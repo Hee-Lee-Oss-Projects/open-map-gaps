@@ -1,0 +1,33 @@
+{
+  "id": "open-map-gaps-maintenance-019",
+  "title": "Staleness / re-map refresh process (incl. post-disaster)",
+  "project": "open-map-gaps",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "OSM data drifts and decays: roads change, buildings are built and demolished, facilities open and close. In post-disaster contexts, the map can become outdated rapidly. open-map-gaps needs a documented staleness / re-map refresh process that defines when an area needs a refresh task, how to trigger it (especially for post-disaster change), and who owns the ongoing liaison. Reverts-for-cause must trigger a root-cause review and a gate/tooling fix. A named steward is required for ongoing maintenance.",
+  "objective": "Document and commit the staleness / re-map refresh process, including triggers, escalation for post-disaster contexts, revert-for-cause handling, and the named steward role.",
+  "acceptanceCriteria": [
+    "A committed process document defines when an area/pack triggers a refresh task (e.g., staleness threshold, post-disaster event, partner request, revert-for-cause).",
+    "Post-disaster escalation is addressed: refresh tasks for active disaster areas flag urgent:true and require expedited gate review.",
+    "Revert-for-cause handling: each revert triggers a root-cause log entry and a gate/tooling fix task.",
+    "A named steward is recorded as the ongoing liaison for maintenance and partner communication.",
+    "Document is reviewed by the Maintainer."
+  ],
+  "resources": [
+    "PLAN.md — Sustainability section; Outcome tracking",
+    "TASKS.md — maintenance-019",
+    "validation-013 QA tool for ongoing re-check",
+    "OSMF Organised Editing Guidelines — for re-registering refresh efforts"
+  ],
+  "output": "A committed staleness / re-map refresh process document covering triggers, post-disaster escalation, revert-for-cause handling, and a named steward, ready to govern ongoing OSM data maintenance.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

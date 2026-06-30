@@ -1,0 +1,36 @@
+{
+  "id": "open-map-gaps-packs-016",
+  "title": "Task packs #3–#5 across ≥ 2 regions → mapped + validated + merged",
+  "project": "open-map-gaps",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M2 requires scaling throughput to at least 5 packs validated and merged cumulatively across at least 2 distinct regions, demonstrating the pipeline works beyond a single area. Each pack uses the QA tool (validation-013), follows the import playbook (import-playbook-014), and is measured against the validator-time efficiency baseline established in M0/M1. The goal is measurable validator-time reduction with no drop in pass rate.",
+  "objective": "Assemble, execute, and document three additional task packs (#3–#5) using the full M1–M2 toolchain across at least 2 distinct regions, each reaching a validated, merged outcome.",
+  "acceptanceCriteria": [
+    "Each of the three packs covers a distinct confirmed partner area, passing both imagery-gate-002 and harm-gate-003 with committed artifacts.",
+    "Packs span at least 2 distinct geographic regions.",
+    "Each pack uses the QA/validation tool (validation-013) during the mapping phase to produce a human-fixable worklist before validator sign-off.",
+    "Each pack follows the import-playbook-014 governance decision before any bulk contribution.",
+    "Each pack's effort is registered as OSMF Organised Editing; features are mapped by humans, validated, and merged into OSM (not reverted); outcomes recorded per pack.",
+    "Validator-time per 100 validated features is recorded; median improves versus the M0/M1 baseline with no drop in pass rate.",
+    "Reviewed by the licensing/imagery reviewer, do-no-harm reviewer, and experienced OSM validator per pack."
+  ],
+  "resources": [
+    "PLAN.md — M2 milestone; Success metrics",
+    "TASKS.md — packs-016 acceptance criteria",
+    "OSMF Organised Editing Guidelines — https://wiki.openstreetmap.org/wiki/Organised_Editing_Guidelines",
+    "validation-013 QA tool",
+    "import-playbook-014 governance playbook"
+  ],
+  "output": "Three committed task packs (#3–#5) with gate artifacts and channel artifacts, plus three outcomes/<pack-id>.json files recording validated-feature counts, pass rates, validator-time metrics, and changeset/TM references across at least 2 distinct regions.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "ODbL-1.0"
+}

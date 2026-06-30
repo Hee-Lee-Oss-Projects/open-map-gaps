@@ -1,0 +1,35 @@
+{
+  "id": "open-map-gaps-conflation-008",
+  "title": "Read-only gap-detection / conflation tool (authorized source vs OSM)",
+  "project": "open-map-gaps",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "AI-assisted gap detection requires a tool that can compare an authorized, ODbL-compatible open dataset against current OSM data and emit a reviewed candidate list of missing or incomplete features. This tool must be strictly read-only — no write credentials, no upload code path — so the human-in-the-loop and OSM Import Guidelines are enforced by the data flow, not by reviewer vigilance. Queries use the Overpass API and OSM API v0.6 (read-only). Output is a reviewed candidate list (never an upload) with provenance attached.",
+  "objective": "Build and ship a read-only gap-detection / conflation tool that compares an authorized open dataset against OSM and emits a reviewed candidate list of missing/incomplete features.",
+  "acceptanceCriteria": [
+    "Tool is read-only: queries OSM via Overpass/API and reads an authorized source dataset; there is no write/upload code path and no OSM credentials are held.",
+    "Tool emits a reviewed candidate list of missing/incomplete features (never an upload), with per-feature provenance and the source's odblCompatible evidence attached.",
+    "Ships committed golden fixtures (synthetic/public OSM-vs-source inputs → expected candidate list); pnpm build && pnpm test && pnpm lint passes green.",
+    "Code is licensed MIT; commits are DCO signed-off.",
+    "Pinned interface versions (OSM API v0.6, Overpass QL) are recorded in specVersions within the codebase.",
+    "Reviewed by the technical reviewer and the licensing/imagery reviewer."
+  ],
+  "resources": [
+    "Overpass API — https://overpass-api.de/",
+    "OSM API v0.6 — https://wiki.openstreetmap.org/wiki/API_v0.6",
+    "Microsoft Building Footprints (ODbL) — https://github.com/microsoft/GlobalMLBuildingFootprints",
+    "PLAN.md — Solution approach; Read-only OSM access protocol",
+    "TASKS.md — conflation-008 acceptance criteria"
+  ],
+  "output": "A merged PR containing the read-only conflation tool (TypeScript/ESM, pnpm workspace), golden fixtures, passing CI, and specVersions recording pinned OSM API v0.6 and Overpass QL versions.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

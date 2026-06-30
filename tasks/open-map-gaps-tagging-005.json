@@ -1,0 +1,33 @@
+{
+  "id": "open-map-gaps-tagging-005",
+  "title": "Tagging / feature-schema profile (HOT presets)",
+  "project": "open-map-gaps",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-map-gaps packs map public infrastructure (roads, buildings, health facilities, schools, water/sanitation points, markets, places of worship, administrative names) using the standard HOT/Missing Maps feature set. Consistent OSM tagging is essential: wrong tags waste validator time or pollute the commons. The HOT presets (used in iD, JOSM, RapiD) define the canonical tag schema for humanitarian mapping. This task produces the project-wide tagging profile, derived from HOT presets, that every pack's feature schema references.",
+  "objective": "Define and commit a tagging / feature-schema profile based on HOT presets, covering the in-scope feature classes, so every pack references a consistent, OSM-valid tag schema.",
+  "acceptanceCriteria": [
+    "A committed tagging profile covers all in-scope feature classes: roads/paths, buildings (footprints, no occupant data), health facilities, schools, water/sanitation points, markets, places of worship as public landmarks, and administrative/place names from authorized sources.",
+    "Each feature class records the canonical OSM tags (key=value pairs), the HOT preset reference (iD/JOSM/RapiD preset name or URL), and validation rules.",
+    "Profile explicitly prohibits tagging occupant names, household composition, individuals' locations, religion/ethnicity/health status of residents, or any re-identifying personal information on building or POI features.",
+    "Profile is derived from and cites the HOT preset set and OSM wiki tagging conventions; any non-standard tag is flagged for community review.",
+    "Reviewed by the technical reviewer; referenced by template-004 and all subsequent packs."
+  ],
+  "resources": [
+    "HOT iD presets — https://github.com/hotosm/id-hotosm-presets",
+    "OSM wiki tagging — https://wiki.openstreetmap.org/wiki/Map_features",
+    "PLAN.md — Feature classes section",
+    "TASKS.md — tagging-005"
+  ],
+  "output": "A committed tagging / feature-schema profile document listing canonical OSM tags, HOT preset references, and validation rules for each in-scope feature class, with explicit PII prohibitions, ready to be embedded in every task pack.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "open-map-gaps-buildings-021",
+  "title": "ODbL building-footprint candidate adapter (e.g., MS Buildings)",
+  "project": "open-map-gaps",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Large ODbL-licensed building-footprint datasets (e.g., Microsoft GlobalMLBuildingFootprints, licensed ODbL) are a high-value source for gap detection in under-mapped regions. This adapter ingests such a dataset and produces a reviewed candidate list in the candidates-009 format. It is contentious: building footprint imports have a history of quality issues and community pushback. The adapter must be strictly candidate-list-only — never auto-import — and any actual contribution of footprints to OSM requires the full Import Guidelines process, community approval, and a dedicated import account.",
+  "objective": "Build and ship a read-only ODbL building-footprint candidate adapter that ingests an authorized building-footprint dataset and produces a reviewed candidate list in candidates-009 format.",
+  "acceptanceCriteria": [
+    "Adapter ingests an ODbL-licensed building-footprint dataset and produces a reviewed candidate list in candidates-009 format with per-footprint provenance and humanReviewRequired:true.",
+    "Adapter is strictly read-only and candidate-list-only: no auto-import, no upload, no OSM write credentials.",
+    "Any downstream use of the candidates for an actual OSM contribution requires the full Import Guidelines process (separate task).",
+    "odblCompatible:true is verified from the source dataset's license citation before any candidate is emitted; incompatible sources are rejected.",
+    "Ships committed golden fixtures; pnpm build && pnpm test && pnpm lint passes green.",
+    "Code is licensed MIT; commits are DCO signed-off.",
+    "Reviewed by the technical reviewer and licensing/imagery reviewer."
+  ],
+  "resources": [
+    "Microsoft GlobalMLBuildingFootprints (ODbL) — https://github.com/microsoft/GlobalMLBuildingFootprints",
+    "OSM Import Guidelines — https://wiki.openstreetmap.org/wiki/Import/Guidelines",
+    "PLAN.md — Data, licensing section; Candidate-list-first decision",
+    "TASKS.md — buildings-021",
+    "candidates-009 format specification"
+  ],
+  "output": "A merged PR containing the read-only ODbL building-footprint candidate adapter, golden fixtures, and passing CI, with strict candidate-list-only output and no import code path.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

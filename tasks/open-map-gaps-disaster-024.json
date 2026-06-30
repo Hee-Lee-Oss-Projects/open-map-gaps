@@ -1,0 +1,35 @@
+{
+  "id": "open-map-gaps-disaster-024",
+  "title": "Rapid-response pack template for active disasters",
+  "project": "open-map-gaps",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "high",
+  "urgent": true,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "In active disaster response (earthquakes, floods, conflict displacement), the mapping need is time-critical and the humanitarian stakes are highest. A rapid-response pack template must differ from the standard template: gates must be completed with urgency without being skipped, and the do-no-harm risk is elevated (displaced/vulnerable populations, conflict contexts, rapidly changing ground truth). This is the urgent:true variant of the pack template, for use only with HOT activation or equivalent expert/ethics authorization. Expert/ethics sign-off is required before any mapping begins.",
+  "objective": "Design and commit a rapid-response pack template for active disaster contexts, addressing expedited gate review, elevated riskTier:high escalation, and the requirement for HOT activation or equivalent expert/ethics authorization.",
+  "acceptanceCriteria": [
+    "Template is clearly marked as the urgent:true variant; it explicitly requires HOT activation or equivalent expert/ethics authorization before use.",
+    "Expedited gate review process is defined: imaging and do-no-harm gates must still be completed but with named reviewers on call and a maximum review turnaround time.",
+    "Template escalates riskTier to high for any conflict or displaced-population context and requires expert/ethics sign-off before mapping begins.",
+    "Template includes a 'no-map' default clause: if the do-no-harm screen cannot be completed with urgency due to lack of qualified reviewers, mapping is halted.",
+    "Template references the standard template (template-004) as its base and documents only the rapid-response differences.",
+    "Reviewed by the do-no-harm reviewer and an expert/ethics reviewer."
+  ],
+  "resources": [
+    "HOT activation protocols — https://www.hotosm.org/updates/",
+    "PLAN.md — Risk gates; Do-no-harm section",
+    "TASKS.md — disaster-024",
+    "template-004 (standard pack template)",
+    "harm-gate-003 (do-no-harm screen)"
+  ],
+  "output": "A committed rapid-response pack template document extending template-004 for active disaster contexts, with expedited gate review procedures, high-risk escalation rules, HOT activation requirement, and a no-map default.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

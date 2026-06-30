@@ -1,0 +1,36 @@
+{
+  "id": "open-map-gaps-imagery-gate-002",
+  "title": "Imagery + source-data licensing gate (blocking, ODbL-compatibility + authorized-imagery checklist)",
+  "project": "open-map-gaps",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm", "governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-map-gaps may only trace from OSM-authorized imagery (Bing, Esri, Maxar via OSM agreement, Mapbox) and may only conflate against ODbL-compatible source datasets. Using unauthorized imagery (e.g., Google Maps/Earth) causes reverts and account blocks on OSM. Conflating against an incompatible license contaminates the ODbL commons. This gate must be completed — with a committed, reviewer-signed artifact — before any pack can be mapped. It also defers CC-BY / share-alike / ambiguous-source decisions to the import-playbook-014 policy.",
+  "objective": "Produce and commit a blocking licensing and imagery gate: an authorized-imagery allowlist, a forbidden-imagery list, an ODbL-compatibility checklist for source datasets, and a PASS/FLAG/EXCLUDE artifact template, so every pack can be gated before mapping begins.",
+  "acceptanceCriteria": [
+    "Imagery section pins an allowlist of OSM-authorized layers (Bing, Esri, Maxar-via-OSM, Mapbox) with required attribution per layer and the OSM permission reference.",
+    "A forbidden list (Google Maps/Earth/Street View and any imagery without an OSM tracing permission) is recorded as a hard exclude.",
+    "Source-data section: PASS only if odblCompatible:true is recorded from a cited clause/URL (PD/CC0/ODbL/OSM-compatible waiver); CC-BY/share-alike/ambiguous sources are deferred to import-playbook-014; unparseable/missing evidence = FLAG/EXCLUDE.",
+    "Requires a license/permission snapshot: committed copy + SHA-256 + Wayback URL (bare URL insufficient) recorded in snapshotRef.",
+    "Produces a committed, reviewable PASS/FLAG/EXCLUDE artifact template per area recording which checks ran and what fired.",
+    "Artifact reviewed and signed by the licensing/imagery reviewer before any pack may be mapped.",
+    "No OSM write credentials are requested or stored; this task produces documentation only."
+  ],
+  "resources": [
+    "OSM imagery permissions — https://wiki.openstreetmap.org/wiki/Permissions",
+    "OSM Import Guidelines — https://wiki.openstreetmap.org/wiki/Import/Guidelines",
+    "ODbL 1.0 — https://opendatacommons.org/licenses/odbl/1-0/",
+    "PLAN.md — Data, licensing & compliance section",
+    "TASKS.md — imagery-gate-002 acceptance criteria"
+  ],
+  "output": "A committed licensing and imagery gate document containing: the authorized-imagery allowlist with attribution, the forbidden-imagery list, the ODbL-compatibility checklist for source datasets, the snapshot-reference format, and a PASS/FLAG/EXCLUDE artifact template ready to be completed per pack.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

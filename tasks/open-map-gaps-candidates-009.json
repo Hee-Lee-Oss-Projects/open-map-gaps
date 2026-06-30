@@ -1,0 +1,33 @@
+{
+  "id": "open-map-gaps-candidates-009",
+  "title": "Reviewed candidate-feature dataset format + generator",
+  "project": "open-map-gaps",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The conflation tool (conflation-008) emits raw candidate detections; this task formalizes the reviewed candidate-feature dataset format and the generator that produces it. The format must make the human-review obligation explicit (humanReviewRequired:true), carry per-feature provenance and confidence, pass through the do-no-harm filter (harm-gate-003), and be licensed ODbL-1.0 as an OSM-derived dataset. The format is the bridge between AI gap detection and human mapping: it is not an OSM-ready upload.",
+  "objective": "Define and implement the reviewed candidate-feature dataset format (GeoJSON) and a generator that produces ODbL-licensed candidate datasets from conflation-008 output, filtered through the do-no-harm gate.",
+  "acceptanceCriteria": [
+    "Defines an ODbL-licensed candidate-feature format (GeoJSON) with per-feature provenance, confidence score, and a humanReviewRequired:true flag — explicitly not an OSM-ready upload.",
+    "Generator passes through the do-no-harm filter: no people-level data; sensitive features are dropped or flagged per harm-gate-003.",
+    "outputLicense is ODbL-1.0 (derived from OSM); dataset documents the share-alike obligation in a LICENSE field or accompanying file.",
+    "Format and generator are reviewed by the technical reviewer and do-no-harm reviewer.",
+    "Ships committed golden fixtures; pnpm build && pnpm test && pnpm lint passes green."
+  ],
+  "resources": [
+    "PLAN.md — Candidate-list-first decision; Data, licensing section",
+    "TASKS.md — candidates-009 acceptance criteria",
+    "ODbL 1.0 — https://opendatacommons.org/licenses/odbl/1-0/",
+    "GeoJSON RFC 7946 — https://datatracker.ietf.org/doc/html/rfc7946"
+  ],
+  "output": "A merged PR defining the reviewed candidate-feature GeoJSON format and generator, licensed ODbL-1.0, with golden fixtures, do-no-harm filtering, and passing CI.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "ODbL-1.0"
+}

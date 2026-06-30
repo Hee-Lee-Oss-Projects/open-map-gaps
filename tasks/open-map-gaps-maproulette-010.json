@@ -1,0 +1,34 @@
+{
+  "id": "open-map-gaps-maproulette-010",
+  "title": "MapRoulette v2 challenge generator from a pack",
+  "project": "open-map-gaps",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "MapRoulette is one of the preferred contribution channels for open-map-gaps: it lets human mappers fix one feature at a time through the OSM editor, with built-in validation, without requiring a Tasking Manager project. This generator takes a reviewed candidate-feature dataset (candidates-009) and produces a valid MapRoulette v2 challenge GeoJSON that can be posted by a human. The generator must never POST to the MapRoulette API autonomously — it produces a file for a human to upload.",
+  "objective": "Build and ship a MapRoulette v2 challenge generator that takes a reviewed candidate-feature dataset and produces a valid v2 challenge GeoJSON file for human upload.",
+  "acceptanceCriteria": [
+    "Generator takes a reviewed candidate-feature dataset (candidates-009 format) and produces a valid MapRoulette v2 challenge GeoJSON.",
+    "Generator does not call the MapRoulette API autonomously; it outputs a file for a human to upload.",
+    "Output challenge GeoJSON validates against the MapRoulette v2 challenge schema; pinned schema version is recorded in specVersions.",
+    "Ships committed golden fixtures (pack input → expected challenge GeoJSON); pnpm build && pnpm test && pnpm lint passes green.",
+    "Code is licensed MIT; commits are DCO signed-off.",
+    "Reviewed by the technical reviewer."
+  ],
+  "resources": [
+    "MapRoulette v2 challenge schema — https://maproulette.org/docs",
+    "MapRoulette API documentation — https://maproulette.org/swagger-ui/",
+    "PLAN.md — Solution approach; machine-readable outputs section",
+    "TASKS.md — maproulette-010"
+  ],
+  "output": "A merged PR containing the MapRoulette v2 challenge generator (TypeScript/ESM), golden fixtures, passing CI, and specVersions recording the pinned MapRoulette v2 schema version.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
