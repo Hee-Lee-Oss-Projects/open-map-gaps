@@ -1,0 +1,34 @@
+{
+  "id": "open-map-gaps-partner-011",
+  "title": "Secure first confirmed partner + (where applicable) local-community sign-off",
+  "project": "open-map-gaps",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "All open-map-gaps packs carry verifiedNeed:false until a named humanitarian actor or local OSM community confirms the specific area, the real use, and that local stakeholders consent. Without a confirmed partner, remote mapping can be worthless or harmful. This task converts outreach-006 candidates into a confirmed first partner by securing a written agreement on area, use, validation channel, and — where a local OSM community exists for the region — community sign-off or non-objection.",
+  "objective": "Secure and document the first named confirmed partner (HOT hub / Missing Maps partner / NGO / local community) with a specific area, real use, validation channel, and local-community sign-off where applicable.",
+  "acceptanceCriteria": [
+    "A named HOT hub / Missing Maps partner / NGO / local community confirms a specific area and a real use in writing; contact and organization are recorded.",
+    "Contribution and validation channel is documented (TM project / MapRoulette / Notes; who validates).",
+    "Where a local OSM community exists for the region, community sign-off or non-objection is obtained and documented.",
+    "Tasks for that partner flip to verifiedNeed:true with requestor set to the confirmed partner's name/organization.",
+    "Agreement is committed as a document in the repository; reviewed by the Steward."
+  ],
+  "resources": [
+    "HOT regional hubs — https://www.hotosm.org/hubs/",
+    "Missing Maps coalition — https://www.missingmaps.org/",
+    "PLAN.md — Governance; Verified need section",
+    "TASKS.md — partner-011 acceptance criteria",
+    "outreach-006 candidate-region shortlist"
+  ],
+  "output": "A committed partner-agreement document recording the confirmed partner name/organization, area, use statement, validation channel, local-community sign-off status, and the basis for setting verifiedNeed:true on the relevant tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

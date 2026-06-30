@@ -1,0 +1,35 @@
+{
+  "id": "open-map-gaps-outreach-006",
+  "title": "Partner / local-community outreach + region shortlist",
+  "project": "open-map-gaps",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-map-gaps must not produce packs for areas with no partner mandate or validation plan: remote mapping without local consent can be worthless or actively harmful. All packs remain verifiedNeed:false until a named partner confirms the area, use, and local consent. This task initiates structured outreach to HOT hubs, Missing Maps partners, NGOs, and local OSM communities to build the shortlist of candidate regions, gather area requests, and identify potential validators — so the M0 pilot and M1 confirmed-partner tasks have real options to evaluate.",
+  "objective": "Conduct and document structured outreach to potential humanitarian partners and local OSM communities, producing a shortlist of candidate regions with area requests, use statements, and known contacts.",
+  "acceptanceCriteria": [
+    "Outreach is initiated to at least three candidate partner organizations (e.g., HOT regional hubs, Missing Maps coalition members, national OSM chapters, field NGOs).",
+    "Each outreach thread is documented with: organization name, contact, area/region of interest, stated use, indication of local OSM community presence, and response status.",
+    "A ranked shortlist of candidate regions is produced, noting which have an active local OSM community, a concrete mapping use, and a potential validator.",
+    "Shortlist distinguishes between confirmed interest (response received) and cold outreach (sent, awaiting reply).",
+    "No region on the shortlist is assumed to have verifiedNeed:true; that status is set only by partner-011 upon named confirmation.",
+    "Document is committed and reviewed by the Steward."
+  ],
+  "resources": [
+    "HOT regional hubs — https://www.hotosm.org/hubs/",
+    "Missing Maps coalition — https://www.missingmaps.org/",
+    "OSM chapters — https://wiki.openstreetmap.org/wiki/Foundation/Local_Chapters",
+    "PLAN.md — Problem & beneficiaries; Governance sections",
+    "TASKS.md — outreach-006"
+  ],
+  "output": "A committed outreach document listing contacted organizations, their responses, and a ranked candidate-region shortlist with area/use/validator information, ready to inform pilot-007 and partner-011.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

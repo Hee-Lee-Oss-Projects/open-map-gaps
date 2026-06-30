@@ -1,0 +1,32 @@
+{
+  "id": "open-map-gaps-outcomes-018",
+  "title": "Verify beneficiary/local use + reuse events",
+  "project": "open-map-gaps",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-map-gaps measures success by outcomes, not outputs: a pack that nobody uses, or edits that get reverted, count as zero. The M3 milestone requires at least one externally verifiable beneficiary use event — a partner actually using the completed map for a real decision. Self-reported impact does not count; evidence must be an OSM changeset history, a validator's sign-off record, a partner's written confirmation, or a Tasking Manager project completion. This task documents that evidence and records it in the outcome ledger.",
+  "objective": "Research, document, and commit at least one externally verifiable beneficiary/local use event and update the outcome ledger with validated-feature counts, pass rates, reverts-for-cause, and root-cause fixes.",
+  "acceptanceCriteria": [
+    "At least one externally verifiable use event is recorded: a partner used the completed map for a real decision; evidence is a written confirmation, report, or TM project completion.",
+    "Validated-feature counts, pass rate, and reverts are recorded in the outcome ledger; reverts-for-cause have a logged root-cause and gate/tooling fix.",
+    "Outcome ledger is committed and reviewed by the Steward.",
+    "Self-reported impact is explicitly excluded; only externally verifiable evidence counts."
+  ],
+  "resources": [
+    "PLAN.md — Success metrics; Outcome capture section",
+    "TASKS.md — outcomes-018 acceptance criteria",
+    "outcome ledger: outcomes/*.json",
+    "HOT Tasking Manager project completion records — https://tasks.hotosm.org"
+  ],
+  "output": "A committed outcome ledger update recording at least one verified beneficiary use event with externally verifiable evidence, plus validated-feature counts, pass rate, revert counts, and root-cause notes for any reverts-for-cause.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

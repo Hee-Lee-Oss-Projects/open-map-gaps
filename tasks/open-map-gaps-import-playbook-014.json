@@ -1,0 +1,34 @@
+{
+  "id": "open-map-gaps-import-playbook-014",
+  "title": "Import + mechanical-edit governance playbook (Import Guidelines + Automated Edits CoC + Organised Editing)",
+  "project": "open-map-gaps",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm", "governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-map-gaps defaults to human micro-tasking (MapRoulette, Notes, TM) rather than bulk imports. However, some scenarios — large ODbL-licensed building footprint datasets, government data with explicit OSM-compatible waivers — may justify a genuine bulk import. When they do, the OSM community's Import Guidelines, Automated Edits CoC, and OSMF Organised Editing Guidelines apply in full and are non-optional. This playbook decides the threshold between micro-tasking and a full import, encodes the governance requirements, and resolves the CC-BY / share-alike / ambiguous-source acceptance rule deferred by imagery-gate-002. It must be merged before any bulk or mechanical contribution runs.",
+  "objective": "Produce and commit the import and mechanical-edit governance playbook, deciding the micro-tasking vs. import threshold, encoding OSM community governance requirements, and resolving deferred CC-BY/ambiguous-source cases.",
+  "acceptanceCriteria": [
+    "Playbook decides in writing when an effort triggers the full Import Guidelines versus stays as human MapRoulette/TM micro-tasking (default: prefer micro-tasking).",
+    "Encodes the Automated Edits CoC and OSMF Organised Editing requirements: dedicated import account, wiki documentation, imports@ discussion, license-compatibility check.",
+    "Decides the CC-BY / share-alike / ambiguous-source acceptance rule (default: exclude/escalate), unblocking imagery-gate-002's deferred cases.",
+    "Must be merged before any bulk or mechanical contribution runs.",
+    "Reviewed by the licensing/imagery reviewer and the Steward."
+  ],
+  "resources": [
+    "OSM Import Guidelines — https://wiki.openstreetmap.org/wiki/Import/Guidelines",
+    "OSM Automated Edits CoC — https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct",
+    "OSMF Organised Editing Guidelines — https://wiki.openstreetmap.org/wiki/Organised_Editing_Guidelines",
+    "PLAN.md — Data, licensing & compliance; Default-to-micro-tasking decision",
+    "TASKS.md — import-playbook-014 acceptance criteria"
+  ],
+  "output": "A committed import and mechanical-edit governance playbook document covering the micro-tasking vs. import threshold, OSM governance requirements (import account/wiki/imports@/license check), and the CC-BY/ambiguous-source acceptance rule, ready to gate any bulk contribution.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

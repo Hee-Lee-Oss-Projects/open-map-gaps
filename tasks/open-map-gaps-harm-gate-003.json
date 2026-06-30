@@ -1,0 +1,35 @@
+{
+  "id": "open-map-gaps-harm-gate-003",
+  "title": "Do-no-harm / privacy & sensitive-feature screen (blocking)",
+  "project": "open-map-gaps",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm", "governance"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Visibility is not always good. Mapping the settlements, shelters, or movement of a persecuted or displaced group can expose them to harm. OSM's humanitarian mapping community (HOT, Missing Maps) has codified do-no-harm practice to address this. open-map-gaps must operationalize this as a non-skippable blocking gate with a named reviewer who can restrict the feature set, lower geo-precision, or exclude an area entirely. Any sensitive or conflict-zone context escalates to riskTier:high requiring expert/ethics sign-off. No pack may be mapped until the do-no-harm screen is completed and signed for that pack.",
+  "objective": "Design and commit a do-no-harm / privacy screen rubric that serves as a mandatory blocking gate for every pack, with decision options, escalation rules, PII prohibitions, and a reviewer-signed artifact template.",
+  "acceptanceCriteria": [
+    "A rubric assessing whether mapping the area/feature set could expose vulnerable people (persecuted/displaced groups, shelters, safe houses, sensitive infrastructure) is committed.",
+    "Decision options are defined: PROCEED / RESTRICT feature set / LOWER geo-precision / EXCLUDE; default to caution on any doubt.",
+    "Escalation rule is defined: conflict/vulnerable-population contexts require riskTier:high and expert/ethics sign-off before mapping begins.",
+    "Enforces the people-are-not-features rule: no occupant/household/individual data; partner-side de-identification and consent required for any field data.",
+    "Produces a committed, reviewer-signed do-no-harm artifact template per pack achieving 100% coverage of all packs.",
+    "Reviewed and signed by the do-no-harm reviewer before any pack may be mapped.",
+    "No OSM write credentials are requested or stored; this task produces documentation only."
+  ],
+  "resources": [
+    "HOT data-ethics / do-no-harm guidance — https://www.hotosm.org/updates/hots-data-principles/",
+    "PLAN.md — Do-no-harm section",
+    "TASKS.md — harm-gate-003 acceptance criteria",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md"
+  ],
+  "output": "A committed do-no-harm screen rubric and artifact template covering: vulnerability assessment checklist, decision options (PROCEED/RESTRICT/LOWER/EXCLUDE), escalation rules for high-risk contexts, PII/people-are-not-features prohibitions, and a reviewer-sign-off field — ready to be completed per pack.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

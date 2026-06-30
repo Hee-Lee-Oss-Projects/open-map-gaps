@@ -1,0 +1,33 @@
+{
+  "id": "open-map-gaps-i18n-020",
+  "title": "Translate a pack's mapping instructions for local mappers",
+  "project": "open-map-gaps",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Task packs authored in English may not reach local mappers who operate in other languages. Translating mapping instructions, tagging profiles, and validation guidance into the language(s) used by the target local OSM community widens uptake and supports the local-first approach. Translation requires a language reviewer with knowledge of both OSM terminology in the target language and the humanitarian mapping context. A specific pack and target language must be confirmed before this task starts.",
+  "objective": "Translate one pack's mapping instructions, tagging profile, and validation guidance into the language of the target local OSM community, reviewed by a language-qualified reviewer.",
+  "acceptanceCriteria": [
+    "Target pack and target language are confirmed before translation begins (language and pack details recorded in the task).",
+    "Mapping instructions, tagging profile (tagging-005), and validation guidance for the selected pack are translated accurately into the target language.",
+    "A language reviewer with knowledge of OSM terminology in the target language reviews and approves the translation.",
+    "Translation is committed alongside the source pack; the source and translation are kept in sync.",
+    "No OSM-derived data is included in the translated document; translation is of documentation only."
+  ],
+  "resources": [
+    "PLAN.md — Local-first; Scope section",
+    "TASKS.md — i18n-020",
+    "HOT translation resources — https://www.hotosm.org/updates/",
+    "OSM wiki translation guidelines — https://wiki.openstreetmap.org/wiki/Translation"
+  ],
+  "output": "A committed translated version of one pack's mapping instructions, tagging profile, and validation guidance in the target local language, reviewed and approved by a language-qualified reviewer.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

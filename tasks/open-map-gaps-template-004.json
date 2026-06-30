@@ -1,0 +1,33 @@
+{
+  "id": "open-map-gaps-template-004",
+  "title": "Task-pack template + canonical pack model",
+  "project": "open-map-gaps",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every open-map-gaps task pack must be structured consistently so that reviewers, validators, and human mappers can quickly find the area-of-interest, authorized imagery, source datasets, tagging schema, mapping instructions, do-no-harm screen decision, and contribution channel. The canonical pack model (defined in PLAN.md) specifies the required fields: id, region, imagery, sources, features, doNoHarm, channel, organisedEditingWikiRef, attribution, acceptanceCriteria, and outcome. This template is a prerequisite for every subsequent pack task.",
+  "objective": "Author and commit the canonical task-pack template and model so that all subsequent packs (pilot-007 onward) share a consistent, reviewable structure.",
+  "acceptanceCriteria": [
+    "A committed task-pack template document covers all canonical model fields: id, region (name/aoiGeoJsonRef/adminLevel/partner/useStatement/localConsent), imagery (allowed layers with provider/layerUrl/osmPermissionRef/attribution), sources (name/url/license/snapshotRef), features (key/tagSchemaRef/mappingNotes/validationRules), doNoHarm, channel, organisedEditingWikiRef, attribution, acceptanceCriteria, and outcome.",
+    "Template includes a completed example section (with placeholder values) so a new pack author knows exactly what to fill in.",
+    "Deliverable-enum mapping is documented: pack/guide/playbook → document; candidate-feature set/MapRoulette challenge → dataset (ODbL-1.0); tooling → pr; translated instructions → translation.",
+    "Template records that no OSM write credentials are used and no AI-generated geometry is uploaded directly.",
+    "Template is reviewed by the technical reviewer and referenced by tagging-005 and subsequent packs."
+  ],
+  "resources": [
+    "PLAN.md — Canonical pack model section",
+    "TASKS.md — template-004",
+    "HOT Tasking Manager project template — https://tasks.hotosm.org",
+    "MapRoulette v2 challenge schema — https://maproulette.org/docs"
+  ],
+  "output": "A committed task-pack template document and canonical model definition, ready to be copied and filled in per area, with all required fields and a completed placeholder example.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

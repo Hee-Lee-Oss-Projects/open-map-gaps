@@ -1,0 +1,36 @@
+{
+  "id": "open-map-gaps-pilot-007",
+  "title": "One pilot task pack end-to-end → mapped, validated, merged",
+  "project": "open-map-gaps",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The M0 milestone requires proving the full open-map-gaps pipeline end-to-end with one pilot pack that reaches a validated, merged outcome — not just 'pack written, unused.' The pilot is gated on: a named partner or local community who has agreed to map/validate a small area (or, failing that, a self-serve-validatable fallback — a tiny, low-sensitivity area with an active local community and an independent validator). All M0 prerequisite tasks (reviewer-001, imagery-gate-002, harm-gate-003, template-004, tagging-005, outreach-006) must be complete before mapping begins. The effort must be registered as OSMF Organised Editing.",
+  "objective": "Assemble, execute, and document one complete pilot task pack — from area selection through gate checks, pack assembly, human mapping, validation, and merged outcome — producing all required artifacts.",
+  "acceptanceCriteria": [
+    "Pilot is gated on a realistic validated-merge path: a partner/local community agreed to map and validate a small area, or a self-serve-validatable fallback (low-sensitivity area, active local community, independent validator) is confirmed.",
+    "Area passed imagery-gate-002 (authorized imagery + ODbL-compatible sources) and harm-gate-003 (signed) with both artifacts committed.",
+    "Pack assembled from template-004 and tagging-005: AoI GeoJSON, tag schema, mapping and validation instructions, attribution, and chosen channel (TM/MapRoulette/Notes).",
+    "Effort registered under OSMF Organised Editing with wiki page URL recorded in the pack.",
+    "Features mapped by a human and validated and merged into OSM (not reverted); validator sign-off and changeset/TM references recorded in outcomes/<pack-id>.json — or, if no channel materializes, pack fully prepared with the blocker surfaced.",
+    "All OSM-derived outputs licensed ODbL-1.0; no OSM write credentials used by any tool.",
+    "Outcome artifact records validated-feature count, pass rate, and any verified beneficiary use."
+  ],
+  "resources": [
+    "PLAN.md — Roadmap M0; Pipeline section",
+    "TASKS.md — pilot-007 acceptance criteria",
+    "OSMF Organised Editing Guidelines — https://wiki.openstreetmap.org/wiki/Organised_Editing_Guidelines",
+    "HOT Tasking Manager — https://tasks.hotosm.org",
+    "MapRoulette — https://maproulette.org"
+  ],
+  "output": "A committed pilot task pack (AoI GeoJSON, tagging schema, instructions, gate artifacts, channel artifact) and an outcomes/<pack-id>.json recording the validated-feature count, pass rate, validator sign-off, and changeset/TM references (or a blocker statement if no channel materializes).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "ODbL-1.0"
+}

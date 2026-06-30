@@ -1,0 +1,34 @@
+{
+  "id": "open-map-gaps-rapid-023",
+  "title": "AI-assisted-tracing instruction guide (RapiD, human-confirmed)",
+  "project": "open-map-gaps",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "RapiD is an OSM editor that surfaces AI-detected feature suggestions for human mappers to accept, modify, or reject one at a time. It keeps AI assistance within OSM community norms: the human confirms every edit in a standard OSM editor. open-map-gaps can recommend RapiD as an efficiency tool for mappers, but only with clear guidance on the human-confirmation discipline required. This guide explains how to use RapiD (or similar AI-suggestion editors) within the project's guardrails and OSM community expectations.",
+  "objective": "Author and commit a guide on using AI-assisted tracing editors (RapiD) for open-map-gaps packs, covering human-confirmation discipline, OSM community norms, and what AI suggestions must not be accepted without review.",
+  "acceptanceCriteria": [
+    "Guide explains RapiD (and similar AI-suggestion editors) and when they are appropriate for open-map-gaps packs.",
+    "Guide covers the human-confirmation discipline: each AI suggestion must be individually reviewed and confirmed or rejected by a human before committing.",
+    "Guide explains what AI suggestions must not be accepted without careful review (e.g., building footprints in sensitive areas, any feature that could be people-level data).",
+    "Guide explicitly states that the AI-suggestion editor must not be used in a way that bypasses the do-no-harm gate or the imagery gate.",
+    "Guide is reviewed by the technical reviewer and the do-no-harm reviewer."
+  ],
+  "resources": [
+    "RapiD editor — https://mapwith.ai/rapid",
+    "HOT RapiD guidance — https://www.hotosm.org/updates/",
+    "OSM community norms on automated/AI editing — https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct",
+    "PLAN.md — AI-assisted-human-tracing stance; Non-goals section",
+    "TASKS.md — rapid-023"
+  ],
+  "output": "A committed guide on using AI-assisted tracing editors (RapiD) for open-map-gaps packs, covering human-confirmation discipline, OSM community norms, and guardrails against AI-suggestion misuse.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

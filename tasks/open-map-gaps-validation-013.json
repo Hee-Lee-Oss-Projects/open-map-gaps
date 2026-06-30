@@ -1,0 +1,33 @@
+{
+  "id": "open-map-gaps-validation-013",
+  "title": "QA/validation tool (Osmose / iD-rule integration) for human fixing",
+  "project": "open-map-gaps",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "After human mappers add features from a task pack, a QA/validation pass is needed to flag likely errors (tagging mistakes, geometry issues, missing required tags) for human fixing before the experienced validator signs off. Osmose and iD/JOSM validation rules are the standard OSM QA tools for this. The tool must be read-only and emit a human-fixable worklist — no auto-fix or upload. The Osmose interface version must be pinned in specVersions.",
+  "objective": "Build and ship a read-only QA/validation tool that pulls Osmose / iD-validation-style issues for a pack's area of interest and emits a human-fixable worklist.",
+  "acceptanceCriteria": [
+    "Tool pulls Osmose and/or iD-validation-style issues for a pack's AoI and emits a human-fixable worklist; read-only; no auto-fix or upload code path.",
+    "Pinned Osmose interface version is recorded in specVersions.",
+    "Ships committed golden fixtures (pack AoI + synthetic Osmose/iD-rule input → expected worklist); pnpm build && pnpm test && pnpm lint passes green.",
+    "Code is licensed MIT; commits are DCO signed-off.",
+    "Reviewed by the technical reviewer."
+  ],
+  "resources": [
+    "Osmose API — https://osmose.openstreetmap.fr/api/0.3",
+    "iD validation rules — https://github.com/openstreetmap/iD",
+    "PLAN.md — Quality-assurance tooling section",
+    "TASKS.md — validation-013 acceptance criteria"
+  ],
+  "output": "A merged PR containing the read-only QA/validation tool (TypeScript/ESM), golden fixtures, passing CI, and specVersions recording the pinned Osmose interface version.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

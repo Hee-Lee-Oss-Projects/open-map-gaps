@@ -1,0 +1,32 @@
+{
+  "id": "open-map-gaps-dashboard-022",
+  "title": "Outcome dashboard (validated features, pass rate, use events)",
+  "project": "open-map-gaps",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-map-gaps tracks outcome metrics (validated features, pass rate, reverts-for-cause, beneficiary use events) in the outcome ledger (outcomes/*.json). A dashboard that reads this ledger and visualizes the success metrics gives the Steward, partners, and the public a live view of project impact. The dashboard reads only — it does not write to OSM, call any OSM API, or expose any sensitive data.",
+  "objective": "Build and ship a read-only outcome dashboard that reads the outcome ledger and displays validated-feature counts, pass rates, revert counts, and beneficiary use events.",
+  "acceptanceCriteria": [
+    "Dashboard reads the outcome ledger (outcomes/*.json) and displays: validated-feature counts, pass rate, revert count and reverts-for-cause, and verified beneficiary use events.",
+    "Dashboard is read-only: no OSM API calls, no write operations, no sensitive data exposed.",
+    "Ships with a golden fixture (sample ledger → expected dashboard output); pnpm build && pnpm test && pnpm lint passes green.",
+    "Code is licensed MIT; commits are DCO signed-off.",
+    "Reviewed by the technical reviewer."
+  ],
+  "resources": [
+    "PLAN.md — Success metrics; Outcome tracking",
+    "TASKS.md — dashboard-022",
+    "outcome ledger: outcomes/*.json"
+  ],
+  "output": "A merged PR containing the read-only outcome dashboard (TypeScript/ESM), a golden fixture, and passing CI.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

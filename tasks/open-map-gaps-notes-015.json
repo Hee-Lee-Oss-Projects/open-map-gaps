@@ -1,0 +1,34 @@
+{
+  "id": "open-map-gaps-notes-015",
+  "title": "OSM Notes batch generator from authorized sources (human-posted)",
+  "project": "open-map-gaps",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "OSM Notes are a lightweight contribution channel that lets anyone flag a location for mappers to investigate, without requiring a full editor session. This generator produces a batch of draft OSM Notes from a reviewed candidate-feature dataset, for a human to post via the standard OSM Notes interface. The generator must pass through the do-no-harm filter and must never autonomously POST notes via the OSM API — it outputs a file or UI-pasteable text for a human to post. Note text must not include people-level data.",
+  "objective": "Build and ship a read-only OSM Notes batch generator that produces human-postable draft notes from a reviewed candidate-feature dataset, filtered through the do-no-harm gate.",
+  "acceptanceCriteria": [
+    "Generator produces well-formed OSM Note draft text (location + description) from a reviewed candidate-feature dataset (candidates-009 format).",
+    "Generator does not autonomously POST to the OSM Notes API; it outputs drafts for a human to post.",
+    "Note text passes through the do-no-harm filter: no people-level data, no sensitive feature descriptions that could cause harm.",
+    "Ships committed golden fixtures (candidate input → expected note text); pnpm build && pnpm test && pnpm lint passes green.",
+    "Code is licensed MIT; commits are DCO signed-off.",
+    "Reviewed by the technical reviewer and do-no-harm reviewer."
+  ],
+  "resources": [
+    "OSM Notes API — https://wiki.openstreetmap.org/wiki/API_v0.6#Map_Notes",
+    "PLAN.md — Machine-readable outputs for human mappers section",
+    "TASKS.md — notes-015",
+    "candidates-009 format specification"
+  ],
+  "output": "A merged PR containing the OSM Notes batch generator (TypeScript/ESM), golden fixtures, passing CI, with do-no-harm filtering and no autonomous API posting.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

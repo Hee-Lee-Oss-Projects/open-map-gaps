@@ -1,0 +1,36 @@
+{
+  "id": "open-map-gaps-pack-012",
+  "title": "Task pack #2 delivered → mapped + validated + merged",
+  "project": "open-map-gaps",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["humanitarian", "geospatial", "open-data", "osm"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Following the M0 pilot (pilot-007) and with the conflation tool (conflation-008) available, the second task pack applies the full pipeline to a confirmed partner's area. The pack uses conflation-008 output for gap detection, passes both blocking gates, is assembled from the template, and reaches a validated, merged outcome. This is the first pack to leverage the AI gap-detection tooling in production.",
+  "objective": "Assemble, execute, and document the second task pack using conflation-008, pass both gates, and reach a validated, merged outcome for a confirmed partner area.",
+  "acceptanceCriteria": [
+    "Pack is built on a confirmed partner area from partner-011 with verifiedNeed:true and requestor set.",
+    "Gap detection uses conflation-008 to produce a reviewed candidate list from an authorized, ODbL-compatible source.",
+    "Area passed imagery-gate-002 and harm-gate-003 with both artifacts committed.",
+    "Pack assembled from template-004 and tagging-005; effort registered as OSMF Organised Editing.",
+    "Features mapped by a human and validated and merged into OSM (not reverted); validator sign-off and changeset/TM references recorded in outcomes/<pack-id>.json.",
+    "All OSM-derived outputs licensed ODbL-1.0; no OSM write credentials used by any tool.",
+    "Reviewed by the licensing/imagery reviewer, do-no-harm reviewer, and experienced OSM validator."
+  ],
+  "resources": [
+    "PLAN.md — Pipeline section; M1 milestone",
+    "TASKS.md — pack-012",
+    "OSMF Organised Editing Guidelines — https://wiki.openstreetmap.org/wiki/Organised_Editing_Guidelines",
+    "conflation-008 tool output",
+    "partner-011 confirmed partner agreement"
+  ],
+  "output": "A committed task pack #2 (AoI GeoJSON, tagging schema, gate artifacts, channel artifact) and an outcomes/<pack-id>.json recording validated-feature count, pass rate, validator sign-off, and changeset/TM references.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "ODbL-1.0"
+}
