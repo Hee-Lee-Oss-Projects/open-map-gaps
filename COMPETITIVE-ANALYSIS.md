@@ -57,7 +57,7 @@ completeness gap: the plan should state how it handles *mixing* an ODbL-compatib
 the combined artifact is cleanly ODbL, but provenance per-feature should be retained so a human can
 later attribute the import correctly.
 
-**1.5 — Organised Editing registration is correctly required.** A coordinated Elyos campaign legally
+**1.5 — Organised Editing registration is correctly required.** A coordinated Hee-Lee Oss campaign legally
 *is* organised editing under the OSMF guideline; registering a wiki activity page before mapping is
 the right move and mirrors how HOT and Meta register their activities
 ([Organised Editing/Activities](https://wiki.openstreetmap.org/wiki/Organised_Editing/Activities/Humanitarian_OpenStreetMap_Team)).
@@ -314,9 +314,9 @@ assembly + QA* layer.** That is open-map-gaps's lane.
 - **Reusable gap-analysis toolkit (perpendicular, high value).** The conflation/QA/license-gate/
   provenance engine is domain-agnostic: "compare an authoritative open dataset against a community
   dataset, find gaps, emit a license-gated, reviewed candidate list." Extract it as a standalone
-  Elyos package usable beyond OSM.
+  Hee-Lee Oss package usable beyond OSM.
 - **MCP server (`gap-analysis-mcp`).** Expose read-only Overpass/ohsome/Osmose queries + conflation +
-  license-check as MCP tools so *any* Claude agent (or other Elyos project) can ask "where is X
+  license-check as MCP tools so *any* Claude agent (or other Hee-Lee Oss project) can ask "where is X
   under-mapped and what's the authorized source to fix it" — without ever holding write credentials.
   This is the agent-neutral-core-friendly way to ship the capability.
 - **Tie to `citizen-science-pipelines`.** Citizen-collected field observations (consented,
@@ -330,7 +330,7 @@ assembly + QA* layer.** That is open-map-gaps's lane.
   candidate-list + human-validation discipline; an urban-tree pack is a specialization of the generic
   pack model, and could share the MCP server's detection-vs-survey logic.
 - **Shared "do-no-harm + license gate" library.** The two blocking gates are reusable governance
-  components for *any* Elyos open-data project that touches people or licensed sources — promote them
+  components for *any* Hee-Lee Oss open-data project that touches people or licensed sources — promote them
   to shared infrastructure.
 
 ---
@@ -353,7 +353,7 @@ assembly + QA* layer.** That is open-map-gaps's lane.
 7. **Saturation threshold:** at what level of existing local mapping activity does a pack become a
    net *harm* (crowding out surveyors) rather than a help, and how is that measured (ohsome activity)?
 8. **MCP/toolkit scope:** is the reusable gap-analysis toolkit in-scope for this project's milestones,
-   or a separate Elyos deliverable? (Affects M1/M2 sizing.)
+   or a separate Hee-Lee Oss deliverable? (Affects M1/M2 sizing.)
 
 ---
 

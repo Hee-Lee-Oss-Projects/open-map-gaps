@@ -11,8 +11,8 @@
   "deliverable": "document",
   "tokenEstimate": "medium",
   "status": "open",
-  "context": "open-map-gaps's durable goal is that local OSM communities own their maps. Remote contribution from Elyos is scaffolding, not the destination. Once at least one region has packs validated and merged, the pipeline and validation workflow must be handed to a local mapper/community with a trained validator who can sign off independently, so the work continues without Elyos. The handover document covers the gates, tagging profile, channel setup, and Organised Editing registration.",
-  "objective": "Produce and deliver a local-community handover document and validator training materials for at least one region, enabling an independent local validator to operate without Elyos support.",
+  "context": "open-map-gaps's durable goal is that local OSM communities own their maps. Remote contribution from Hee-Lee Oss is scaffolding, not the destination. Once at least one region has packs validated and merged, the pipeline and validation workflow must be handed to a local mapper/community with a trained validator who can sign off independently, so the work continues without Hee-Lee Oss. The handover document covers the gates, tagging profile, channel setup, and Organised Editing registration.",
+  "objective": "Produce and deliver a local-community handover document and validator training materials for at least one region, enabling an independent local validator to operate without Hee-Lee Oss support.",
   "acceptanceCriteria": [
     "At least one region's pack/validation workflow is handed to a local OSM community with a trained validator able to sign off independently.",
     "Handover document covers: gate procedures (imagery-gate-002, harm-gate-003), tagging profile (tagging-005), contribution channel setup (TM/MapRoulette/Notes), and OSMF Organised Editing registration steps.",

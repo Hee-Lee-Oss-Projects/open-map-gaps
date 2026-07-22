@@ -26,7 +26,7 @@
     "HOT data-ethics / do-no-harm guidance — https://www.hotosm.org/updates/hots-data-principles/",
     "PLAN.md — Do-no-harm section",
     "TASKS.md — harm-gate-003 acceptance criteria",
-    "C:\\code\\elyos\\docs\\good-deed-definition.md"
+    "C:\\code\\hee-lee-oss\\docs\\good-deed-definition.md"
   ],
   "output": "A committed do-no-harm screen rubric and artifact template covering: vulnerability assessment checklist, decision options (PROCEED/RESTRICT/LOWER/EXCLUDE), escalation rules for high-risk contexts, PII/people-are-not-features prohibitions, and a reviewer-sign-off field — ready to be completed per pack.",
   "requestor": "TO BE SECURED",

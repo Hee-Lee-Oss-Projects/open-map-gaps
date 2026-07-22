@@ -29,7 +29,7 @@ actual OSM edit, through OSM's own editors and authorized coordination tools.
 This boundary is not a limitation we tolerate; **it is the design.** OSM is a community with binding
 norms: the [Automated Edits code of conduct], the [Import Guidelines], and the OSMF [Organised
 Editing Guidelines]. Edits that bypass them — especially AI-generated bulk edits — get reverted, and
-the responsible accounts blocked, by the OSM Data Working Group. Elyos's own donated-lane rule is
+the responsible accounts blocked, by the OSM Data Working Group. Hee-Lee Oss's own donated-lane rule is
 identical in spirit: the platform "never invokes or authenticates a coding agent and never runs
 headless; it prepares a task workspace... the human runs their agent." We map that rule onto OSM:
 **no headless edits, ever; AI assists, a human decides and commits, the community validates.**
@@ -187,7 +187,7 @@ software *finds and documents* gaps; humans *map* them.
 `organisedEditingWikiRef`, `attribution`, `acceptanceCriteria[]`,
 `outcome {validatedFeatures, passRate, revertCount, useEvents[]}`.
 
-**Tech stack.** TypeScript, ESM, pnpm workspaces (Elyos convention). Geospatial tooling uses small
+**Tech stack.** TypeScript, ESM, pnpm workspaces (Hee-Lee Oss convention). Geospatial tooling uses small
 Node packages (`@turf/turf` for geometry, GeoJSON I/O); conflation/QA may shell out to read-only
 queries against the OSM API / Overpass and Osmose. No runtime service; everything runs locally or in
 CI and **emits files for human review** — never writes to the OSM API.
@@ -204,7 +204,7 @@ written to local files for a human to open in an editor. CI has no OSM credentia
 
 **Key decisions (locked).**
 - **AI assists, humans edit, community validates.** No headless/bot edits; AI output is always a
-  human-reviewed candidate, instruction, or QA flag. This mirrors the Elyos donated-lane rule.
+  human-reviewed candidate, instruction, or QA flag. This mirrors the Hee-Lee Oss donated-lane rule.
 - **Candidate-list-first.** Detection produces reviewable candidates, never an upload — so the
   human-in-the-loop and OSM Import Guidelines are structurally enforced.
 - **Local-first.** Prefer engaging the local OSM community for mapping/validation over remote-only;
@@ -314,7 +314,7 @@ pack is *not* shipped; community-validated, accepted edits are.
   gated, in priority order, on: (a) a **named partner or local community** who has agreed to map/
   validate a specific small area; failing that, (b) a **self-serve-validatable fallback** — a tiny,
   low-sensitivity area (e.g., a well-understood region with an active local community and an existing
-  Missing Maps interest) where the Elyos maintainer can themselves map a sample and an independent
+  Missing Maps interest) where the Hee-Lee Oss maintainer can themselves map a sample and an independent
   experienced validator can confirm it. The pilot must reach a *validated, merged* outcome, not a
   "pack written, unused" one.
 - Exit criteria: (1) pack template + canonical model + tagging schema published; (2) licensing/
@@ -394,7 +394,7 @@ that enable and verify it.
   assumed in scope yet.
 - **Governance documents:** OSM Automated Edits CoC, Import Guidelines, OSMF Organised Editing
   Guidelines, OSM Foundation data-protection / DWG policies, HOT data-ethics / do-no-harm guidance.
-- **Elyos pieces:** Task JSON schema (`packages/schema`), donated-lane CLI workspace/PR flow
+- **Hee-Lee Oss pieces:** Task JSON schema (`packages/schema`), donated-lane CLI workspace/PR flow
   (`packages/cli`) for *our repo's* code/docs (not for OSM edits), good-deed definition + refusal
   guardrails. No funded-lane/runner dependency (donated lane).
 
@@ -402,7 +402,7 @@ that enable and verify it.
 
 | Risk | Likelihood | Impact | Mitigation | Owner |
 | --- | --- | --- | --- | --- |
-| AI-generated/bulk edits pushed into OSM → mass revert + account block + reputational harm to Elyos | Medium | High | Hard architectural rule: no OSM write credentials in any tool/CI; candidate-list-first; human-in-the-loop + validator gate; follow Import/Automated-Edit/Organised-Editing governance | Maintainer |
+| AI-generated/bulk edits pushed into OSM → mass revert + account block + reputational harm to Hee-Lee Oss | Medium | High | Hard architectural rule: no OSM write credentials in any tool/CI; candidate-list-first; human-in-the-loop + validator gate; follow Import/Automated-Edit/Organised-Editing governance | Maintainer |
 | Tracing from unauthorized imagery (e.g., Google) → copyright violation, reverts | Medium | High | Imagery gate pins only OSM-authorized layers per pack; reviewer sign-off; forbidden list enforced | Licensing/imagery reviewer |
 | Conflating an OSM-incompatible source → license contamination of the commons | Medium | High | Source gate requires `odblCompatible:true` with cited evidence; default-exclude; import-acceptance policy | Licensing/imagery reviewer |
 | **Doing harm** by mapping vulnerable people / sensitive features | Low | High | Mandatory do-no-harm screen; escalate sensitive contexts to high + expert/ethics; restrict/lower precision/exclude; default to caution | Do-no-harm reviewer |
@@ -423,7 +423,7 @@ that enable and verify it.
   API; CI holds no OSM secrets. This structurally prevents an accidental or malicious headless edit.
 - **Secrets handling:** read-only API/Overpass/Osmose access needs no secret by default. If a human
   uses an OSM account to map/import, those credentials live only with that human's editor and are
-  never written into our logs, receipts, or committed files (per Elyos rules).
+  never written into our logs, receipts, or committed files (per Hee-Lee Oss rules).
 - **PII / people-level data:** dominant concern is *upstream* — that a source dataset or field
   collection contains people-level data. Handled by the people-are-not-features rule, the do-no-harm
   screen, and partner-side de-identification + consent. We inspect candidate data only enough to map
@@ -438,7 +438,7 @@ that enable and verify it.
 
 - **Local ownership is the exit.** The durable outcome is a local OSM community that owns its map.
   M3 hands packs/validation to local mappers and trains a validator, so the work continues without
-  Elyos. Remote contribution is scaffolding, not the destination.
+  Hee-Lee Oss. Remote contribution is scaffolding, not the destination.
 - **Maintenance:** OSM data drifts and decays; the staleness/re-map process flags areas needing
   refresh (e.g., post-disaster change), tracked as `type: maintenance` tasks. Tooling tracks pinned
   interface versions and is bumped via deliberate tasks.
@@ -465,11 +465,11 @@ that enable and verify it.
 
 ## References
 
-- Elyos work rules — `C:\code\elyos\CLAUDE.md`
-- Good Deed Definition + risk tiers — `C:\code\elyos\docs\good-deed-definition.md`
-- Task JSON schema — `C:\code\elyos\packages\schema\src\schemas.ts`
-- Portfolio roadmap — `C:\code\elyos\planning\ROADMAP.md`
-- Proposal — TO BE WRITTEN (`C:\code\elyos\governance\proposals\open-map-gaps.md`)
+- Hee-Lee Oss work rules — `C:\code\hee-lee-oss\CLAUDE.md`
+- Good Deed Definition + risk tiers — `C:\code\hee-lee-oss\docs\good-deed-definition.md`
+- Task JSON schema — `C:\code\hee-lee-oss\packages\schema\src\schemas.ts`
+- Portfolio roadmap — `C:\code\hee-lee-oss\planning\ROADMAP.md`
+- Proposal — TO BE WRITTEN (`C:\code\hee-lee-oss\governance\proposals\open-map-gaps.md`)
 - OpenStreetMap & ODbL 1.0; OSM Copyright/License page
 - OSM Automated Edits code of conduct; Import / Import Guidelines; OSMF Organised Editing Guidelines
 - OSM imagery permissions (Bing, Esri, Maxar via OSM agreement, Mapbox); OSM "on-the-ground" rule
@@ -502,7 +502,7 @@ to the plan/tasks above (and to `TASKS.md`). They are listed so the reasoning is
 8. **"People are not features" rule** added to scope, privacy, and risks — building footprints carry
    geometry + public function only, never occupant data.
 9. **Organised Editing registration** (OSMF guideline) added as an exit criterion and steward duty,
-   since a coordinated Elyos mapping campaign legally *is* organised editing.
+   since a coordinated Hee-Lee Oss mapping campaign legally *is* organised editing.
 10. **Local-first / local-community sign-off** made a gate and a sustainability exit, directly
     countering the well-known "armchair remote mapping" quality and legitimacy problem.
 11. **Validator gate distinguishes "produced" from "delivered."** "Shipped" requires an experienced
@@ -556,7 +556,7 @@ the key tasks, milestone DoDs, a future backlog, and one complete schema-valid e
 - *Guardrails:* license/provenance (imagery + ODbL-compatibility gates, snapshotting, no proprietary/
   Google scraping); privacy/PII (people-are-not-features, partner-side de-identification); do-no-harm
   + high-risk expert escalation; non-partisan/on-the-ground rule — all present and cross-referenced.
-- *Elyos rules:* no headless/automated edits (mirrors the donated-lane CLI rule); agent-neutral; no
+- *Hee-Lee Oss rules:* no headless/automated edits (mirrors the donated-lane CLI rule); agent-neutral; no
   secrets in logs/CI; "delivered, not merged" encoded as the validator gate; honest `verifiedNeed`.
 - *Honesty:* partner, requestor, and reviewer roles marked **TO BE SECURED**; `verifiedNeed:false`
   across the backlog until a partner is confirmed.
