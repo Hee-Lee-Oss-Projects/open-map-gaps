@@ -6,7 +6,7 @@ In large parts of the world the basic map does not exist. Buildings, roads, heal
 
 **Definition of shipped:** and merged into OSM (not reverted)** under ODbL — with imagery/source licensing verified, the do-no-harm screen signed, the effort registered as Organised Editing, and the outcome (validated count, pass rate) recorded by the Steward. **Ideally, plus a verified beneficiary use.** 
 
-This is an **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/hee-lee-oss
+This is a **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Get started: https://github.com/Hee-Lee-Oss-Projects/hee-lee-oss-downloads
 
 ## Plan
 - [PLAN.md](./PLAN.md) — robust enterprise plan (vision, architecture, roadmap, risks; includes an applied-improvements appendix + review sign-off)
